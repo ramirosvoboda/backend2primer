@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro y Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Registro y Login</h1>
+  
+  <!-- Formulario de Registro -->
+  <div id="register-form">
+    <h2>Registrarse</h2>
+    <input type="text" id="register-firstname" placeholder="Nombre" required>
+    <input type="text" id="register-lastname" placeholder="Apellido" required>
+    <input type="email" id="register-email" placeholder="Correo Electrónico" required>
+    <input type="number" id="register-age" placeholder="Edad" required>
+    <input type="password" id="register-password" placeholder="Contraseña" required>
+    <button onclick="register()">Registrar</button>
+  </div>
+
+  <!-- Formulario de Login -->
+  <div id="login-form">
+    <h2>Iniciar sesión</h2>
+    <input type="email" id="login-email" placeholder="Correo Electrónico" required>
+    <input type="password" id="login-password" placeholder="Contraseña" required>
+    <button onclick="login()">Iniciar sesión</button>
+  </div>
+
+  <!-- Mostrar datos del usuario logueado -->
+  <div id="current-user" style="display: none;">
+    <h2>Usuario Logueado</h2>
+    <p id="user-info"></p>
+    <button onclick="getCurrentUser()">Ver información</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
